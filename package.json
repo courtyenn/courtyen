@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "eslint": "^7.32.0",
+    "http-server": "^13.0.0"
+  }
+}
