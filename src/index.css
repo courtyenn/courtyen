@@ -3,15 +3,15 @@
 @tailwind utilities;
 @use autoprefixer(browsers: ['last 2 versions']);
 
-:root {
-  --active-link: #d374c8;
-}
 html {
   background: #002060;
-  background: -moz-linear-gradient(top,  #d841c7 1%, #8257ba 33%, #002060 75%);
-  background: -webkit-linear-gradient(top,  #d841c7 1%,#8257ba 33%,#002060 75%);
-  background: linear-gradient(to bottom,  #d841c7 1%,#8257ba 33%,#002060 75%);
+  background: -moz-linear-gradient(top,  #d841c7 1%, #8257ba 33%, #002060 75%) no-repeat;
+  background: -webkit-linear-gradient(top,  #d841c7 1%,#8257ba 33%,#002060 75%) no-repeat;
+  background: linear-gradient(to bottom,  #d841c7 1%,#8257ba 33%,#002060 75%) no-repeat;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d841c7', endColorstr='#002060',GradientType=0 );
+}
+a {
+  cursor: pointer;
 }
 
 .cursive {
@@ -25,6 +25,11 @@ html {
 .grid-area-footer {
   grid-area: footer;
   grid-column: 2/2;
+}
+
+.card {
+  display: flex;
+  gap: 50px;
 }
  
 /** Fontello **/

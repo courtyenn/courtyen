@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       gridTemplateRows: {
-        layout: "[nav] 10vh [content] minmax(700px, 80vh) [footer] 10vh",
+        layout: "[nav] 10vh [content] minmax(80vh, auto) [footer] 10vh",
       },
       gridTemplateColumns: {
         layout: "1fr [content] 10fr 1fr",

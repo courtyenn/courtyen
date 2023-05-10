@@ -1,13 +1,14 @@
 .construction-container {
     --construction-yellow: #ffd800;
     --construction-black: #020024;
-    --signWidth: 350px;
+    --signWidth: 380px;
     --lightSize: 45px;
 
     position: relative;
     width: var(--signWidth);
     margin: 0 auto;
     margin-top: 80px;
+    margin-bottom: 50px;
 }
 
 @keyframes blink {
@@ -56,23 +57,23 @@
   }
   
   .bottompost {
-    margin-top: 125px;
+    margin-top: 95px;
     background-image: repeating-linear-gradient(45deg, var(--construction-yellow) 5%, var(--construction-black) 5%, var(--construction-black) 10%, var(--construction-yellow) 10%, var(--construction-yellow) 15%);
   }
   
   .legs {
     box-sizing: border-box;
     position: absolute;
-    width: var(--signWidth);
+    width: 198px;
     height: auto;
     background: transparent;
   }
   
   #leg-right {
     transform: rotate(79deg);
-    top: 176px;
+    top: 172px;
     z-index: 0;
-    left: 127px;
+    right: -60px;
     border-right: 4px solid transparent;
     border-top: 24px solid gray;
   }
@@ -81,7 +82,7 @@
     transform: rotate(101deg);
     top: 176px;
     z-index: 0;
-    left: -119px;
+    left: -60px;
     border-right: 4px solid transparent;
     border-bottom: 24px solid gray;
   }
@@ -115,4 +116,11 @@
   
   #light2 {
     right: 0;
+  }
+
+  .cityscape {
+    background: url('src/assets/images/cityscape2.png') repeat-x 87px -10px;
+    display: flex;
+    align-items: center;
+    height: 474px;
   }
