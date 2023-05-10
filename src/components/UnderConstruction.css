@@ -1,0 +1,118 @@
+.construction-container {
+    --construction-yellow: #ffd800;
+    --construction-black: #020024;
+    --signWidth: 350px;
+    --lightSize: 45px;
+
+    position: relative;
+    width: var(--signWidth);
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+@keyframes blink {
+    0% {
+      box-shadow: 0px 0 20px 2px #ffa500c2;
+    }
+    60% {
+      box-shadow: 0px 0 20px 2px #00000000;
+    }
+  }
+  
+  @keyframes blink2 {
+    0% {
+      background: #f8e3b04d;
+    }
+    60% {
+      background: #d48900a8;
+    }
+  }
+
+  #container {
+    position: relative;
+    width: var(--signWidth);
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+    
+  .construction {
+    position: relative;
+    z-index: 100;
+    margin: 0 auto;
+    padding: 10px 50px;
+    width: var(--signWidth);
+    background-image: repeating-linear-gradient(135deg, var(--construction-yellow) 5%, var(--construction-black) 5%, var(--construction-black) 10%, var(--construction-yellow) 10%, var(--construction-yellow) 15%);
+  }
+  
+  #signpost {
+    background: #ffffdf;
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    border: 1px dashed #b1b1b169;
+  }
+  
+  .bottompost {
+    margin-top: 125px;
+    background-image: repeating-linear-gradient(45deg, var(--construction-yellow) 5%, var(--construction-black) 5%, var(--construction-black) 10%, var(--construction-yellow) 10%, var(--construction-yellow) 15%);
+  }
+  
+  .legs {
+    box-sizing: border-box;
+    position: absolute;
+    width: var(--signWidth);
+    height: auto;
+    background: transparent;
+  }
+  
+  #leg-right {
+    transform: rotate(79deg);
+    top: 176px;
+    z-index: 0;
+    left: 127px;
+    border-right: 4px solid transparent;
+    border-top: 24px solid gray;
+  }
+  
+  #leg-left {
+    transform: rotate(101deg);
+    top: 176px;
+    z-index: 0;
+    left: -119px;
+    border-right: 4px solid transparent;
+    border-bottom: 24px solid gray;
+  }
+  
+  .flashing-light {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: calc(var(--lightSize) * -1);
+    width: var(--lightSize);
+    height: var(--lightSize);
+    background: orange;
+    border-radius: 50%;
+    position: absolute;
+    background-image:  url('https://www.transparenttextures.com/patterns/dark-dotted-2.png');
+    animation: 1.5s step-end blink infinite;
+  }
+
+  .flashing-light::after {
+    content: "";
+    background: orange;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation: 1.5s step-end blink2 infinite;
+  }
+  
+  #light1 {
+    left: 0;
+  }
+  
+  #light2 {
+    right: 0;
+  }
