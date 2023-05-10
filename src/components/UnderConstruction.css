@@ -121,6 +121,6 @@
   .cityscape {
     background: url('src/assets/images/cityscape2.png') repeat-x 87px -10px;
     display: flex;
-    align-items: center;
+    align-items: end;
     height: 474px;
   }
