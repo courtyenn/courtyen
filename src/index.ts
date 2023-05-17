@@ -8,12 +8,16 @@ const app = singleSpaReact({
   React,
   ReactDOM,
   rootComponent: App,
+  domElementGetter() {
+    // Otherwise single-spa will generate it's own root node.
+    return document.getElementById('root')
+  }
 });
 
 registerApplication({
-  name: 'courtyen',
+  name: 'courtyen-ui',
   app,
-  activeWhen: ['/']
+  activeWhen: ['/'],
 });
 
 start();
