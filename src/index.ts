@@ -6,11 +6,11 @@ import { registerApplication, start } from "single-spa";
 
 const app = singleSpaReact({
   React,
-  ReactDOM,
+  ReactDOMClient: ReactDOM,
   rootComponent: App,
   domElementGetter() {
     // Otherwise single-spa will generate it's own root node.
-    return document.getElementById('root')
+    return document.getElementById('root')!
   }
 });
 
