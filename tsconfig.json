@@ -19,6 +19,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["src", "courtyen-ui", "vite-env.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

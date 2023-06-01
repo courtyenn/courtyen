@@ -1,5 +1,0 @@
-{
-  "imports": {
-    "@courtyen/web": "./src/module-a.ts"
-  }
-}
