@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{html,js,ts,tsx}"],
+  content: ["./index.html", "./courtyen-ui/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       gridTemplateRows: {

@@ -4,6 +4,10 @@
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "module": "ESNext",
     "skipLibCheck": true,
+    "baseUrl": ".", // This must be specified if "paths" is.
+    "paths": {
+      "@courtyen/ui": ["./courtyen-ui/index.ts"]
+    },
 
     /* Bundler mode */
     "moduleResolution": "bundler",
